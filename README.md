@@ -15,10 +15,24 @@ This project enables the user to know the fuel consumption level by various fact
 3.template - This folder contains the HTML template (index.html) to allow user to enter employee detail and displays the predicted employee salary.
 static - This folder contains the css folder with style.css file which has the styling required for out index.html file.
 
-## Running the project
+### Running the project
+1. Ensure that you are in the project home directory, Create the machine learning model by running below command from command prompt -
+```
+python CarFuelConsumption.py
+```
+This would create a serialized version of our model into a file model.pkl
 
-1.Ensure that you are in the project home directory.
+2. Run app.py using below command to start Flask API
+```
+python app.py
+```
+By default, flask will run on port 5000.
 
-Create the machine learning model by running below command from command prompt -
+3. Navigate to URL http://127.0.0.1:5000/ (or) http://localhost:5000
 
-$ python app.py
+You should be able to view the homepage.
+
+Enter valid numerical values in all 8 input boxes and hit Predict.
+
+If everything goes well, you should  be able to see the predcited fuel consumption vaule on the HTML page!
+check the output here: http://127.0.0.1:5000/predict
