@@ -12,8 +12,13 @@ This project enables the user to know the fuel consumption level by various fact
 
 2.app.py - This contains Flask APIs that receives vehicles paramet  through GUI or API calls, computes the precited value based on our model and returns it.
 
-template - This folder contains the HTML template (index.html) to allow user to enter employee detail and displays the predicted employee salary.
+3.template - This folder contains the HTML template (index.html) to allow user to enter employee detail and displays the predicted employee salary.
 static - This folder contains the css folder with style.css file which has the styling required for out index.html file.
-Running the project
 
+## Running the project
 
+1.Ensure that you are in the project home directory.
+
+Create the machine learning model by running below command from command prompt -
+
+$ python app.py
